@@ -1,4 +1,4 @@
-const srvr= require('express')();
+const srvr = require('express')();
 
 const tchr_route = require('./routes/teachers');
 const studnt_route = require('./routes/students');
