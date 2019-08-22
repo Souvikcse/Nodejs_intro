@@ -1,0 +1,14 @@
+{
+  "name": "food_menu",
+  "version": "1.0.0",
+  "description": "My First small demo project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Souvik Banerjee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
