@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table{
+            font-size: 20px;
+            border-collapse: collapse;
+            border: 7px solid black;
+        }
+    </style>
+</head>
+<body>
+    <a href="/add"> Add Person </a>
+    <br><br><br>
+    <table border="7" cellpadding="6px" >
+        <thead>
+            <th>Name</th>
+            <th>Age</th>
+            <th>City</th>
+        </thead>
+        {{#each persons as |person|}}
+        <tr>
+            <td>{{person.name}}</td>
+            <td>{{person.age}}</td>
+            <td>{{person.city}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</body>
+</html>
