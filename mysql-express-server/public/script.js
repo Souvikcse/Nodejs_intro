@@ -33,8 +33,12 @@ $(function() {
     )
 
     submit_btn.click(function () { 
-        console.log('Button was clicked');
-        
-        
-    });
+        $.post('/api/persons/',
+          { name: in_name.val(),
+            age: in_age.val(),
+            city: in_city.val()  },
+        function (data) {
+             refreshPage(data)
+            })
+           });
 })
