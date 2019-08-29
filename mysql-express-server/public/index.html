@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="jquery.js"></script>
+    <script src="script.js"></script>
     <style>
         table{
             font-size: 14px;
@@ -14,21 +16,26 @@
     </style>
 </head>
 <body>
-    <a href="/pages/add"> Add Person </a>
+        <h3>Add a new person</h3><br><br>
+
+            <input id= "name" type="text" placeholder="Name" name="name"><br>
+            <input id= "age"type="number" placeholder="Age" name="age"><br>
+            <input id="city" type="text" placeholder="City" name="city"><br>
+            <input id="submit_btn" type="submit">
+        
     <br><br><br>
-    <table border="7" cellpadding="6px" >
+    <table id="persons" border="7" cellpadding="6px" >
         <thead>
             <th>Name</th>
             <th>Age</th>
             <th>City</th>
         </thead>
-        {{#each persons as |person|}}
+        
         <tr>
-            <td>{{person.name}}</td>
-            <td>{{person.age}}</td>
-            <td>{{person.city}}</td>
+            <td>Welcome</td>
+            <td>00</td>
+            <td>Kolkata</td>
         </tr>
-        {{/each}}
     </table>
 </body>
 </html>
